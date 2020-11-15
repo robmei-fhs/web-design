@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            /* ---------  Color Palette ------------*/
+            .colorPalette {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                width:90%;
+                margin: 2vh auto;
+                height:60px;
+            }
+            .c1 {
+                flex-basis: 60%;
+                background: #E63946;
+                color:white;
+            }
+            .c2 {
+                flex-basis: 30%;
+                background: #F1FAEE;
+                color:white;
+            }
+            .c3 {
+                flex-basis: 5%;
+                background: #A8DADC;
+            }
+            .c4 {
+                flex-basis: 5%;
+                background: #457B9D;
+            }
+            /* change colors here */
+            header {
+                background: white;
+                color: black;
+            }
+            footer {
+                background: black;
+                color: black;
+            }
+            nav {
+                background: black;
+                color: white;
+            }
+            /* first section*/
+            #content1 {
+                background: #E63946;
+            }
+            #content1 h1 {
+                color: #F1FAEE;
+            }
+            #content1 p {
+                color: #F1FAEE;
+            }
+            #content1 .circle {
+                background: #457B9D;
+            }
+            #content1 .circle2 {
+                background: #A8DADC;
+            }
+            #content1 a {
+                color: #F1FAEE;
+                background: #1D3557;
+            }
+
+            /* second section*/
+            #content2 {
+                background: #F1FAEE;
+            }
+            #content2 h1 {
+                color: black;
+            }
+            #content2 p {
+                color: black;
+            }
+            #content2 .circle {
+                background: #E63946;
+            }
+            #content2 .circle2 {
+                background: #A8DADC;
+            }
+            #content2 a {
+                color: #F1FAEE;
+                background: #E63946;
+            }
+
+            /* last section*/
+            #content3 {
+                background: #1D3557;
+            }
+            #content3 h1 {
+                color: #F1FAEE;
+            }
+            #content3 p {
+                color: #F1FAEE;
+            }
+            #content3 .circle {
+                background: #A8DADC;
+            }
+            #content3 .circle2 {
+                background: #E63946;
+            }
+            #content3 a {
+                color: #A8DADC;
+                background:#E63946;
+            }
+            /* ---------  Normal CSS ------------*/
+            body {
+                margin: 0;
+            }
+            header {
+                text-align:center;
+                display: flex;
+            }
+            .header-left {
+                flex-basis:50%;
+            }
+            .header-right {
+                flex-basis: 50%;
+            }
+            nav {
+                padding:2vh;
+            }
+            footer {
+                padding:2vh;
+                min-height:15vh;
+            }
+            .circle {
+                height: 50%;
+                width:50%;
+                border-radius: 100%;
+                position: relative;
+                margin:-12%;
+                top:-12%
+            }
+            .circle2 {
+                height: 50%;
+                width:50%;
+                border-radius: 100%;
+                position: relative;
+                margin: -25%;
+                bottom: -12%;
+                
+            }
+
+            .content-segment {
+                width:100%;
+                padding: 3vh 0;
+                min-height:60vh;
+            }
+            .container {
+                width:70%;
+                margin:auto;
+                padding:2vh;
+                text-align: center;
+                display: flex;
+            }
+            .image {
+                flex-basis: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .text {
+                flex-basis: 70%;
+            }
+            .text h1 {
+                font-size: 3rem;
+            }
+            .text p {
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                width:80%;
+                margin: auto;
+            }
+            .text a {
+                display: block;
+                width: 30%;
+                margin: 2vh auto;
+                padding: 2vh;
+                text-decoration: none;
+                border-radius: 16px;
+            }
+
+            
+            
+        </style>
+        <title>Page Title</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-left">
+                <h3>Assignment Title</h1>
+                <p>
+                    First Name Last Name<br>
+                    Web 1, HOUR<br>
+                    DATE
+                </p>
+            </div>
+            <div class="header-right">
+            
+            <h3>My Color Palette</h3>
+            <div class="colorPalette">
+                <div class="c1">
+                    Main<br>
+                    60%
+                </div>
+                <div class="c2">
+                    Second<br>
+                    30%
+                </div>
+                <div class="c3">
+                    
+                </div>
+                <div class="c4">
+                    
+                </div>
+            </div>
+        </div>
+        </header>
+        <nav>
+            Placeholder
+        </nav>
+        <div id="content1" class="content-segment">
+
+        <div class="container left-image">
+            <!-- Write Assignment code under here-->
+            <div class="image">
+                <div class="circle"></div>
+                <div class="circle2"></div>
+            </div>
+            <div class="text">
+                <h1>Large Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Placeat doloremque ad 
+                    dolores adipisci quos fugit natus officia necessitatibus iure quidem? Nulla iste exercitationem fugiat doloremque.
+                </p>
+                <a href="#" class="btn">Button</a>
+            </div>   
+        </div><!-- End of container -->
+
+        </div>
+
+        <div id="content2" class="content-segment">
+
+            <div class="container left-image">
+                <!-- Write Assignment code under here-->
+                <div class="image">
+                    <div class="circle"></div>
+                    <div class="circle2"></div>
+                </div>
+                <div class="text">
+                    <h1>Large Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Placeat doloremque ad 
+                        dolores adipisci quos fugit natus officia necessitatibus iure quidem? Nulla iste exercitationem fugiat doloremque.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>   
+            </div><!-- End of container -->
+
+        </div>
+
+        <div id="content3" class="content-segment">
+
+            <div class="container left-image">
+                <!-- Write Assignment code under here-->
+                <div class="image">
+                    <div class="circle"></div>
+                    <div class="circle2"></div>
+                </div>
+                <div class="text">
+                    <h1>Large Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Placeat doloremque ad 
+                        dolores adipisci quos fugit natus officia necessitatibus iure quidem? Nulla iste exercitationem fugiat doloremque.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>   
+            </div><!-- End of container -->
+    
+        </div>
+        <footer>
+            Placeholder
+            
+        </footer>
+
+    <!-- End of page code, but be sure to copy closing tags below-->
+    </body>
+</html>

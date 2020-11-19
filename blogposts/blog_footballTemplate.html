@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+        h1 {
+            text-align: center;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 80%;
+            margin: auto;
+            background: rgb(255, 239, 214);
+            padding: 2vh;
+            flex-direction: row;
+        }
+        .left {
+            flex-basis:40%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        .right {
+            flex-basis:60%;
+            padding: 2vh;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            flex-grow: 0;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        .left iframe {
+            width:80%;
+            height: 40vh;
+            display: block;
+            margin: auto;
+        }
+        .left a {
+            display: block;
+            padding: 2vh;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width:800px) {
+            .flex-container {
+                width: 96%;
+                flex-direction: column;
+            }
+            .left, .right {
+                flex-basis: 100%;
+            }
+        }
+
+	</style>
+
+</head>
+<body>
+<h1>Fitz vs. Hazel Park Football</h1>
+<div class="flex-container">
+    <div class="left">
+        <iframe src="https://www.youtube.com/embed/QwCBsT4VAds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="https://youtu.be/QwCBsT4VAds" target="_blank">Livestream Link</a>
+    </div>
+    <div class="right">
+        Put the text here.<br><br>
+        
+    </div>
+</div>
+
+
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>

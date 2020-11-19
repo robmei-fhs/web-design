@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+        :root {
+            --bg_color:rgba(157, 217, 210,1.0);
+            --heading_color:rgba(57, 47, 90,1.0);
+            --aux_color1:rgba(255, 136, 17, 1.0);
+            --aux_color2:rgba(244, 208, 111,1.0);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: var(--bg_color);
+        }
+        .pageHeader {
+            background: var(--aux_color1);
+            padding: 3vh;
+            width:60%;
+            margin: 2vh auto;
+            text-align: center;
+        }
+        .sport {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 2vh auto;
+            padding: 2vh;
+            background: white;
+        }
+        .sportName {
+            background: var(--heading_color);
+            color:var(--aux_color2);
+            width: 100%;
+            margin-bottom: 2vh;
+            padding: 2.5vh;
+        }
+        .athlete {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 100%;
+            margin-bottom: 2vh;
+            padding-bottom: 2vh;
+            border-bottom: 1px black solid;
+        }
+        .image {
+            flex-basis: 35%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .image .overlay {
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width:100%;
+            height:30%;
+            background: rgba(0,0,0,.5);
+            padding: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay p {
+            color:white;
+            width:100%;
+            font-size: 2.25rem;
+            text-align: center;
+            padding: 2vh;
+        }
+        .image img {
+            display: block;
+            width: 100%;
+        }
+        
+
+        .text {
+            flex-basis: 65%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            padding: 0 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .text-item {
+            flex-basis: 45%;
+            padding:2vh;
+            margin: 0 2vh 2vh 2vh;
+            background: var(--aux_color2);
+        }
+        .text-item h3 {
+            font-size:1.5rem;
+        }
+        .text-item p {
+            line-height: 1.5rem;
+        }
+
+        @media only screen and (max-width:800px) {
+            .athlete {
+                flex-direction: column;
+            }
+            .text, .image {
+                flex-basis: 100%;
+            }
+            .text {
+                flex-direction: column;
+                padding:0;
+            }
+            .text-item {
+                flex-basis: 100%;
+                margin: 2vh 0;
+            }
+        }
+
+
+	</style>
+
+</head>
+<body>
+	<h2 class="pageHeader">Athlete of the Week</h2>
+    <hr>
+    <div class="sport">
+        <h3 class="sportName">SPORT NAME</h3>
+
+        <div class="athlete">
+            <div class="image">
+
+                <img src="https://static01.nyt.com/images/2020/06/10/us/politics/10lebron-voters/10lebron-voters-mediumSquareAt3X.jpg" alt="#" title="#">
+
+                <div class="overlay">
+                    <p>
+                        #100<br>
+                        ATHLETE NAME
+                    </p>
+                </div>
+
+            </div><!-- End Image-->
+
+            <div class="text">
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+
+            </div><!-- End Text-->
+
+        </div><!-- End of an Athlete-->
+
+        <div class="athlete">
+            <div class="image">
+
+                <img src="https://static01.nyt.com/images/2020/06/10/us/politics/10lebron-voters/10lebron-voters-mediumSquareAt3X.jpg" alt="#" title="#">
+
+                <div class="overlay">
+                    <p>
+                        #100<br>
+                        ATHLETE NAME
+                    </p>
+                </div>
+
+            </div><!-- End Image-->
+
+            <div class="text">
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+
+            </div><!-- End Text-->
+
+        </div><!-- End of an Athlete-->
+
+
+    </div><!-- End of a sport -->
+
+
+    <div class="sport">
+        <h3 class="sportName">SPORT NAME</h3>
+
+        <div class="athlete">
+            <div class="image">
+
+                <img src="https://static01.nyt.com/images/2020/06/10/us/politics/10lebron-voters/10lebron-voters-mediumSquareAt3X.jpg" alt="#" title="#">
+
+                <div class="overlay">
+                    <p>
+                        #100<br>
+                        ATHLETE NAME
+                    </p>
+                </div>
+
+            </div><!-- End Image-->
+
+            <div class="text">
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+
+            </div><!-- End Text-->
+
+        </div><!-- End of an Athlete-->
+
+        <div class="athlete">
+            <div class="image">
+
+                <img src="https://static01.nyt.com/images/2020/06/10/us/politics/10lebron-voters/10lebron-voters-mediumSquareAt3X.jpg" alt="#" title="#">
+
+                <div class="overlay">
+                    <p>
+                        #100<br>
+                        ATHLETE NAME
+                    </p>
+                </div>
+
+            </div><!-- End Image-->
+
+            <div class="text">
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+                <div class="text-item">
+                    <h3>Item Header</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Velit, iste!
+                    </p>
+                </div><!-- End Text Item-->
+
+
+            </div><!-- End Text-->
+
+        </div><!-- End of an Athlete-->
+
+
+    </div><!-- End of a sport -->
+
+	
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>

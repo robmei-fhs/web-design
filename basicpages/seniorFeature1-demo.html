@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container {
+			display: flex;
+			flex-direction: column;
+            width:96%;
+            margin: auto;
+		}
+        .student, .row {
+            flex-basis: 100%;
+			flex-grow: 0;
+			flex-shrink: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .student {
+            padding: 1vh;
+            margin: 1vh 0;
+            flex-direction: column;
+            border:1px black solid;
+        }
+        .pageTitle {
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 2vh;
+        }
+        h2 {
+            flex-basis: 100%;
+            flex-grow: 0;
+			flex-shrink: 0;
+            text-align: center;
+            padding:1vh;
+        }
+        .media {
+            flex-basis: 40%;
+            padding: 1vh;
+        }
+        .media iframe {
+            display: block;
+            width: 94%;
+            margin: 0 auto 2vh auto;
+            height: 250px;
+        }
+        .media img {
+            display: block;
+            width: 94%;
+            margin: 0 auto 2vh auto;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+        }
+        .questions {
+            flex-basis: 60%;
+        }
+        .q, .a {
+            padding: 1vh;
+        }
+        .q {
+            font-weight: bold;
+            background: lightslategray;
+            color:white;
+        }
+        @media only screen and (max-width:800px) {
+            .row {
+                flex-direction: column;
+            }
+            .media, .questions {
+                flex-basis: 100%;
+            }
+        }
+
+
+
+	</style>
+
+</head>
+<body>
+	<h2 class="pageTitle">Senior Feature</h2>
+	<hr>
+
+	<div class="flex-container">
+        <div class="student">
+        <h2>Student Name</h2>
+
+		<!-- Start of a row -->
+		<div class="row">
+			<div class="media">
+                <iframe></iframe>
+            </div>
+            <div class="questions">
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+            </div>
+        </div><!-- End of a row -->
+
+        <div class="row">
+			
+            <div class="questions">
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+            </div>
+
+            <div class="media">
+                <img src="https://via.placeholder.com/1920x1080/eee?text=16:9" alt="#" title="#">
+            </div>
+        </div><!-- End of a row -->
+
+        <div class="row">
+			<div class="media">
+                <img src="https://via.placeholder.com/1920x1080/eee?text=16:9" alt="#" title="#">
+            </div>
+            <div class="questions">
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+
+                <div class="q">
+                    Question
+                </div>
+                <div class="a">
+                    Answer
+                </div>
+            </div>
+        </div><!-- End of a row -->
+        
+
+        </div><!-- End of a student -->
+
+
+	</div><!-- End flex container -->
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>

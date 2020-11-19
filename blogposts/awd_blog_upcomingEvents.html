@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+        .flex-container {
+			display: flex;
+			flex-direction: column;
+		}
+		.row {
+			flex-basis: 100%;
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin: 1vh;
+			background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 1.25rem;
+            padding: 2vh;
+		}
+        .eDate {
+            flex-basis: 15%;
+            flex-shrink: 0;
+            flex-grow: 0;
+            font-weight: bold;
+        }
+        .eName {
+            flex-basis: 50%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        .eTime {
+            flex-basis: 15%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        .eLocation {
+            flex-basis: 20%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        @media only screen and (max-width:800px) {
+            .row {
+                flex-wrap: wrap;
+            }
+            .eDate {
+                flex-basis: 30%;
+            }
+            .eName {
+                flex-basis: 70%;
+            }
+            .eName::after {
+                content: " ";
+            }
+            .eTime {
+                flex-basis: 30%;
+            }
+            .eLocation {
+                flex-basis: 70%;
+            }
+        }
+	</style>
+
+</head>
+<body>
+	<h2>Upcoming Events: Week of September 28</h2>
+	<hr>
+
+	<div class="flex-container">
+		<!-- Start of a row -->
+		<div class="row">
+			<div class="eDate">
+				9/28/20
+			</div>
+			<div class="eName">
+				Test Event at FHS
+			</div>
+			<div class="eTime">
+				7:00PM
+			</div>
+			<div class="eLocation">
+				HOME
+			</div>
+		</div><!-- End of a row -->
+
+		<!-- Start of a row -->
+		<div class="row">
+			<div class="eDate">
+				9/28/20
+			</div>
+			<div class="eName">
+				Test Event at FHS
+			</div>
+			<div class="eTime">
+				7:00PM
+			</div>
+			<div class="eLocation">
+				HOME
+			</div>
+		</div><!-- End of a row -->
+
+		<!-- Start of a row -->
+		<div class="row">
+			<div class="eDate">
+				9/28/20
+			</div>
+			<div class="eName">
+				Test Event at FHS
+			</div>
+			<div class="eTime">
+				7:00PM
+			</div>
+			<div class="eLocation">
+				HOME
+			</div>
+		</div><!-- End of a row -->
+
+
+
+	</div><!-- End flex container -->
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+        h1 {
+            text-align: center;
+        }
+        .flexContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 80%;
+            margin: auto;
+            flex-direction: row;
+            padding: 2vh;
+            background: rgb(255, 239, 214);
+        }
+        .left {
+            flex-basis: 40%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        .right {
+            flex-basis: 60%;
+            flex-shrink: 0;
+            flex-grow: 0;
+            padding: 2vh;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        .left iframe {
+            display: block;
+            height: 40vh;
+            width: 80%;
+            margin: auto;
+        }
+        .left a {
+            display: block;
+            padding: 2vh;
+            text-align: center;
+        }
+
+
+        @media only screen and (max-width: 800px){
+            .flexContainer {
+                width: 96%;
+                flex-direction: column;
+            }
+            .left {
+                flex-basis: 100%;
+            }
+            .right {
+                flex-basis: 100%;
+            }
+        }
+
+
+	</style>
+
+</head>
+<body>
+    <h1>Fitz vs. Hazel Park Football</h1>
+    <div class="flexContainer">
+        <div class="left">
+            <iframe></iframe>
+            <a href="#" target="_blank">LINK</a>
+        </div>
+        <div class="right">
+            Put the text here.<br><br>
+        </div>
+    </div>
+
+
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>
